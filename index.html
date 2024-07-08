@@ -1,342 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
 
+    <!-- Read and update content attributes accordingly  -->
+
     <!-- Update favicon href attribute with image of yourself -->
-    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/png"
+    />
 
     <!-- Preloading fonts for better performance -->
-    <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
 
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
+    <!-- Your name here -->
     <title>Kaustubh Srivastava's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        h2, h3 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        .header-image {
-            width: 100px;
-            height: auto;
-            margin-left: 20px;
-        }
-        .logos img {
-            width: 45%;
-            height: auto;
-        }
-        .header {
-            margin-bottom: 20px; /* Adjust this value to reduce the gap */
-        }
-        .work {
-            margin-top: 0; /* Adjust this value to reduce the gap */
-        }
-        .header-btns {
-            margin-bottom: 0; /* Remove any extra margin */
-        }
-    </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <script>
-        const theme = localStorage.getItem("theme") || "light";
-        document.body.classList.add(theme);
+      const theme = localStorage.getItem("theme") || "light";
+      document.body.classList.add(theme);
     </script>
 
     <header class="header">
-        <div class="menu-btn-container">
-            <div class="container">
-                <button type="button" class="menu-btn">menu</button>
-            </div>
-        </div>
-
-        <nav class="nav hidden">
-            <ol class="nav-items">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#work">My Work</a></li>
-                <li class="nav-item"><a href="#blog">See Blog</a></li>
-                <li class="nav-item"><a href="#skills">My Skills</a></li>
-                <li class="nav-item">
-                    <a href="#contact" data-focused="last-focused">Contact</a>
-                </li>
-            </ol>
-        </nav>
-
+      <div class="menu-btn-container">
         <div class="container">
-            <div class="header-textbox">
-                <!-- Replace with your name and job title -->
-                <h1 class="h1">
-                    <span>Hi, I'm Kaustubh Srivastava</span>
-                    <span>Analytics - Data Science - Data Engineer</span>
-                </h1>
-
-                <!-- Add a small introductory paragraph about yourself -->
-                <p class="header-text">
-                    Analytics @ UC San Diego | Seeking Full-time 2024<br>
-                    Specialized in Customer and Risk Analytics<br>
-                    E-commerce & Q-Commerce Industry
-                </p>
-
-                <div class="header-btns">
-                    <a href="#contact" class="btn btn-cta">HIRE->ME</a>
-                    <a href="#work" class="btn btn-secondary">My Work</a>
-                </div>
-            </div>
+          <button type="button" class="menu-btn">menu</button>
         </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Kaustubh Srivastava</span>
+            <span>Analytics - Data Science - Data Engineer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            Analytics @ UC San Diego | Seeking Full-time 2024<br>
+            Specialized in Customer and Risk Analytics<br>
+            E-commerce & Q-Commerce Industry
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">HIRE->ME</a>
+            <a href="#work" class="btn btn-secondary">My Work</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <picture class="work-img">
-        <img
-            loading="lazy"
-            src="assets/images/work/Dunzo-Image.jpg"
-            alt="agency elevation"
-        />
+      <img
+        loading="lazy"
+        src="assets/images/work/Dunzo-Image.jpg"
+        alt="agency elevation"
+      />
     </picture>
 
     <section class="work">
-        <div class="container">
-            <h2 class="h2" id="work">Projects</h2>
-            <div class="work-boxes">
-                <div class="work-box">
-                    <div class="work-textbox">
-                        <!-- Add your project title here -->
-                        <h3 class="h3">Customer Analytics</h3>
-                        <!-- Add small description of your project -->
-                        <p class="work-text">
-                            Work Done on Customer Analytics<br>
-                            A<br>
-                            B<br>
-                            C<br>
-                            D
-                        </p>
-                        <!-- Add technologies you used to build the project -->
-                        <ol class="work-technologies">
-                            <li>A - B - C - D</li>
-                        </ol>
-                    </div>
-
-                    <!-- Update img src and alt attribute -->
-                    <picture class="work-img">
-                        <img
-                            loading="lazy"
-                            src="assets/images/work/portfolio-template.webp"
-                            alt="Customer Analytics"
-                        />
-                    </picture>
-                </div>
-
-                <div class="work-box">
-                    <div class="work-textbox">
-                        <!-- Add your project title here -->
-                        <h3 class="h3">Fraud Analytics</h3>
-                        <!-- Add small description of your project -->
-                        <p class="work-text">
-                            Things done in fraud analytics<br>
-                            A<br>
-                            B<br>
-                            C
-                        </p>
-                        <ol class="work-technologies">
-                            <li>A - B - C</li>
-                        </ol>
-                    </div>
-
-                    <!-- Update img src and alt attribute -->
-                    <picture class="work-img">
-                        <img
-                            loading="lazy"
-                            src="assets/images/work/agency-elevation.webp"
-                            alt="Fraud Analytics"
-                        />
-                    </picture>
-                </div>
-
-                <div class="work-box">
-                    <div class="work-textbox">
-                        <!-- Add your project title here -->
-                        <h3 class="h3">Data Science Projects</h3>
-                        <!-- Add small description of your project -->
-                        <p class="work-text">
-                            Work Done in Data Science in forecasting<br>
-                            A<br>
-                            B<br>
-                            C<br>
-                            D
-                        </p>
-                        <ol class="work-technologies">
-                            <li>A - B - C - D</li>
-                        </ol>
-                    </div>
-
-                    <!-- Update img src and alt attribute -->
-                    <picture class="work-img">
-                        <img
-                            loading="lazy"
-                            src="assets/images/work/contribute-dev.webp"
-                            alt="Data Science Projects"
-                        />
-                    </picture>
-                </div>
+      <div class="container">
+        <h2 class="h2" id="work">Projects</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Customer Analytics</h3>
+              <!-- Add small description of your project -->
+              <p class="work-text">
+                Work Done on Customer Analytics<br>
+                A<br>
+                B<br>
+                C<br>
+                D
+              </p>
+              <!-- Add technologies you used to build the project -->
+              <ol class="work-technologies">
+                <li>A - B - C - D</li>
+              </ol>
             </div>
+
+            <!-- Update img src and alt attribute -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/portfolio-template.webp"
+                alt="Customer Analytics"
+              />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Fraud Analytics</h3>
+              <!-- Add small description of your project -->
+              <p class="work-text">
+                Things done in fraud analytics<br>
+                A<br>
+                B<br>
+                C
+              </p>
+              <ol class="work-technologies">
+                <li>A - B - C</li>
+              </ol>
+            </div>
+
+            <!-- Update img src and alt attribute -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/agency-elevation.webp"
+                alt="Fraud Analytics"
+              />
+            </picture>
+          </div>
+
+          <div class="work-box">
+            <div class="work-textbox">
+              <!-- Add your project title here -->
+              <h3 class="h3">Data Science Projects</h3>
+              <!-- Add small description of your project -->
+              <p class="work-text">
+                Work Done in Data Science in forecasting<br>
+                A<br>
+                B<br>
+                C<br>
+                D
+              </p>
+              <ol class="work-technologies">
+                <li>A - B - C - D</li>
+              </ol>
+            </div>
+
+            <!-- Update img src and alt attribute -->
+            <picture class="work-img">
+              <img
+                loading="lazy"
+                src="assets/images/work/contribute-dev.webp"
+                alt="Data Science Projects"
+              />
+            </picture>
+          </div>
         </div>
+      </div>
     </section>
 
+    <!-- Update skills-img src, alt  and title attributes I have added some other logos in assets/images/skill for your convenience feel free to pick one if required  -->
+
     <section class="skills">
-        <div class="container">
-            <h2 class="h2" id="skills">My Toolkit</h2>
-            <div class="skills-imgs">
-                <img src="assets/images/skills/react.webp" alt="Python" class="skills-img" loading="lazy" title="React">
-                <img src="assets/images/skills/svelte.webp" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
-                <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
-                <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
-                <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
-                <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
-                <img src="assets/images/skills/graphql.webp" alt="GraphQL" class="skills-img" loading="lazy" title="GraphQL">
-                <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
-                <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
-                <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
-            </div>
+      <div class="container">
+        <h2 class="h2" id="skills">My Toolkit</h2>
+        <div class="skills-imgs">
+          <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy" title="React">
+          <img src="assets/images/skills/svelte.webp" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+          <img src="assets/images/skills/typescript.webp" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+          <img src="assets/images/skills/a11y.webp" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+          <img src="assets/images/skills/shell.webp" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+          <img src="assets/images/skills/next-js.webp" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+          <img src="assets/images/skills/graphql.webp" alt="GraphQL" class="skills-img" loading="lazy" title="GraphQL">
+          <img src="assets/images/skills/git.webp" alt="Git" class="skills-img" loading="lazy" title="Git">
+          <img src="assets/images/skills/html.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+          <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
         </div>
+      </div>
     </section>
 
     <section class="contact">
-        <div class="container">
-            <h2 class="h2" id="contact">Send Message</h2>
-            <div class="contact-content">
-                <div class="contact-textbox">
-                    <!-- Please comment this component if you're not available for hire -->
-                    <strong href="#" class="hire-alert">
-                        <span class="indicator"></span>
-                        Available for hire
-                    </strong>
-                    <p class="contact-text">
-                        As a software engineer, I construct web interfaces and design
-                        systems with a special love for accessibility and performance. I
-                        tend to code things from scratch and enjoy bringing ideas to life.
-                    </p>
-                    <p class="contact-text">
-                        I'm also an open-source developer, and in my spare time, I do
-                        digital art with my iPad Pro.
-                    </p>
-                    <!-- Replace src with your signatures and name -->
-                    <img
-                        src="assets/images/signatures.png"
-                        alt="Syed Mohsin"
-                        class="signatures"
-                        loading="lazy"
-                    />
-                </div>
-                <form action="#" class="contact-form" netlify>
-                    <div class="form-field">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name" required />
-                    </div>
-                    <div class="form-field">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            required
-                            inputmode="email"
-                        />
-                    </div>
-                    <div class="form-field">
-                        <label for="message">How can I help you?</label>
-                        <textarea name="message" id="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-cta">Send</button>
-                </form>
+      <div class="container">
+        <h2 class="h2" id="contact">Send Message</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <!-- Please comment this component if you're not available for hire -->
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Available for hire
+            </strong>
+            <p class="contact-text">
+              As a software engineer, I construct web interfaces and design
+              systems with a special love for accessibility and performance. I
+              tend to code things from scratch and enjoy bringing ideas to life.
+            </p>
+            <p class="contact-text">
+              I'm also an open-source developer, and in my spare time, I do
+              digital art with my iPad Pro.
+            </p>
+            <!-- Replace src with your signatures and name -->
+            <img
+              src="assets/images/signatures.png"
+              alt="Syed Mohsin"
+              class="signatures"
+              loading="lazy"
+            />
+          </div>
+          <form action="#" class="contact-form" netlify>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
             </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                inputmode="email"
+              />
+            </div>
+            <div class="form-field">
+              <label for="message">How can I help you?</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Send</button>
+          </form>
         </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <!-- Update href and src attributes -->
-                <nav>
-                    <ol class="footer-links">
-                        <li class="footer-link">
-                            <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                                ><img
-                                loading="lazy"
-                                src="assets/images/social-links/github.svg"
-                                alt="GitHub"
-                            /></a>
-                        </li>
-                        <li class="footer-link">
-                            <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                                ><img
-                                loading="lazy"
-                                src="assets/images/social-links/codepen.svg"
-                                alt="Codepen"
-                            /></a>
-                        </li>
-                        <li class="footer-link">
-                            <a title="Linkedin" href="https://www.linkedin.com/in/syed-mohisn-raza-393177262/" target="_blank" rel="noopener"
-                                ><img
-                                loading="lazy"
-                                src="assets/images/social-links/linkedin.svg"
-                                alt="Linkedin"
-                            /></a>
-                        </li>
-                        <li class="footer-link">
-                            <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
-                                ><img
-                                loading="lazy"
-                                src="assets/images/social-links/twitter.svg"
-                                alt="Twitter"
-                            /></a>
-                        </li>
-                    </ol>
-                </nav>
-                <p class="footer-text">
-                    &copy; <span>2024</span> - Template designed & developed by
-                    <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
-                </p>
-                <label class="theme-switch" for="theme-switch">
-                    <span>Dark Theme</span>
-                    <input type="checkbox" id="theme-switch" role="switch" />
-                </label>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <!-- Update href and src attributes -->
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Codepen" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/codepen.svg"
+                    alt="Codepen"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/syed-mohisn-raza-393177262/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://github.com/devsyedmohsin" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - Template designed & developed by
+            <a target="_blank" rel="noopener" href="https://github.com/devsyedmohsin">Syed Mohsin.</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch" />
+          </label>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
