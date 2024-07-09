@@ -954,21 +954,22 @@ body.dark .work-links img {
 }
 
 .skills-img {
-  block-size: 135px;
-  inline-size: 135px;
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: contain; /* Ensure images fit within the given dimensions */
 }
 
 @media (max-width: 1100px) {
   .skills-img {
-    block-size: 100px;
-    inline-size: 100px;
+    width: 85px;
+    height: 85px;
   }
 }
 
 @media (max-width: 810px) {
   .skills-img {
-    block-size: 85px;
-    inline-size: 85px;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -977,17 +978,18 @@ body.dark .work-links img {
     gap: var(--gutter-large);
   }
   .skills-img {
-    block-size: 70px;
-    inline-size: 70px;
+    width: 60px;
+    height: 60px;
   }
 }
 
 @media (max-width: 340px) {
   .skills-img {
-    block-size: 55px;
-    inline-size: 55px;
+    width: 50px;
+    height: 50px;
   }
 }
+
 
 /* --------------------------------- */
 /* ----- Contact -----*/
