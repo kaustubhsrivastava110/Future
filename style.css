@@ -649,7 +649,7 @@ body.light .logo {
 
 .work-img,
 .work-textbox {
-  flex-basis: 39%;
+  flex-basis: 49%;
 }
 
 .work-img {
@@ -662,7 +662,7 @@ body.light .work-img {
 }
 
 .work-textbox {
-  max-inline-size: 700px;
+  max-inline-size: 900px;
 }
 
 @media (max-width: 885px) {
