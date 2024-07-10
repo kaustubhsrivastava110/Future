@@ -407,7 +407,7 @@ main {
   padding-block: var(--gutter-nano);
   border-radius: var(--gutter-large);
   text-decoration: none;
-  background-color: black;
+  background-color: white;
   color: var(--important);
   cursor: pointer;
 }
