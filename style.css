@@ -1152,6 +1152,29 @@ body.light .signatures {
   border: none;
 }
 
+.fraud-analytics-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.fraud-analytics-section .h3 {
+    display: flex;
+    align-items: center;
+}
+
+.fraud-analytics-section .fraud-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px; /* Space between text and image */
+}
+
+.fraud-analytics-section ul {
+    margin-top: 0;
+    margin-left: 20px; /* Adjust as needed */
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
 /* --------------------------------- */
 /* ----- Footer -----*/
 /* --------------------------------- */
