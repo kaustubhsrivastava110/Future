@@ -426,8 +426,7 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background-color: #164780;
-  background-image: var(--gradient-brand);
+  background: linear-gradient(to bottom right, #007bff, #00bfff); /* Blue gradient */
   transition: 450ms var(--easing);
   z-index: 3;
 }
