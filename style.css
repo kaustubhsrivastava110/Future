@@ -426,7 +426,7 @@ main {
   min-block-size: 100vh;
   position: fixed;
   width: 100%;
-  background: linear-gradient(to bottom right, #007bff, #000000); /* Blue to Black gradient */
+  background: linear-gradient(to bottom right, #007bff, #27313d); /* Blue to Black gradient */
   transition: 450ms var(--easing);
   z-index: 3;
 }
