@@ -662,7 +662,7 @@ body.light .work-img {
 }
 
 .work-textbox {
-  max-inline-size: 900px;
+  max-inline-size: 1200px;
 }
 
 @media (max-width: 885px) {
