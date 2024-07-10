@@ -619,7 +619,9 @@ body.light .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: var(--gutter-medium); /* Add this line to reduce the bottom margin */
 }
+
 
 @media (max-width: 1045px) {
   .work-boxes {
@@ -649,14 +651,14 @@ body.light .logo {
 
 .work-img,
 .work-textbox {
-  flex-basis: 9%;
+  flex-basis: 65%;
 }
 
 .work-img {
-  max-inline-size: 500px;
-  transition: 0.6s all;
+  flex-basis: 30%; /* Decrease this value to reduce the image size */
+  max-inline-size: 300px; /* Optional: You can set a maximum width for the image */
+  margin-left: var(--gutter-small); /* Add this line to add space between the text and the image */
 }
-
 body.light .work-img {
   box-shadow: var(--shadow);
 }
