@@ -1,308 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Read and update content attributes accordingly  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Update favicon href attribute with image of yourself -->
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicon-32x32.png"
-      type="image/png"
-    />
+  <!-- Read and update content attributes accordingly  -->
 
-    <!-- Preloading fonts for better performance -->
-    <link
-      rel="preload"
-      href="assets/fonts/Mona-Sans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+  <!-- Update favicon href attribute with image of yourself -->
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+  <!-- Preloading fonts for better performance -->
+  <link rel="preload" href="assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- Your name here -->
-    <title>Kaustubh Srivastava's Portfolio</title>
-  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 
-  <body>
-    <script>
-      const theme = localStorage.getItem("theme") || "light";
-      document.body.classList.add(theme);
-    </script>
+  <!-- Your name here -->
+  <title>Kaustubh Srivastava's Portfolio</title>
+</head>
 
-    <header class="header">
-      <div class="menu-btn-container">
-        <div class="container">
-          <button type="button" class="menu-btn">menu</button>
-        </div>
-      </div>
+<body>
+  <script>
+    const theme = localStorage.getItem("theme") || "light";
+    document.body.classList.add(theme);
+  </script>
 
-      <nav class="nav hidden">
-        <ol class="nav-items">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#work">My Work</a></li>
-          <li class="nav-item"><a href="#blog">See Blog</a></li>
-          <li class="nav-item"><a href="#skills">My Skills</a></li>
-          <li class="nav-item">
-            <a href="#contact" data-focused="last-focused">Contact</a>
-          </li>
-        </ol>
-      </nav>
-
+  <header class="header">
+    <div class="menu-btn-container">
       <div class="container">
-        <div class="header-textbox">
-          <!-- Replace with your name and job title -->
-          <h1 class="h1">
-            <span>Hi, I'm Kaustubh Srivastava</span>
-            <span>Analytics - Data Science - Data Engineer</span>
-          </h1>
-
-          <!-- Add a small introductory paragraph about yourself -->
-          <p class="header-text">
-            Analytics @ UC San Diego | Seeking Full-time 2024<br>
-            Specialized in Customer and Risk Analytics<br>
-            E-commerce & Q-Commerce Industry
-          </p>
-
-          <div class="header-btns">
-            <a href="#contact" class="btn btn-cta">HIRE->ME</a>
-            <a href="#work" class="btn btn-secondary">My Work</a>
-          </div>
+        <!-- <button type="button" class="menu-btn">menu</button> -->
+        <div class="menu-btn-custom">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
       </div>
-    </header>
+    </div>
 
-        
-            
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#work">My Work</a></li>
+        <li class="nav-item"><a href="#blog">See Blog</a></li>
+        <li class="nav-item"><a href="#skills">My Skills</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">Contact</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <!-- Replace with your name and job title -->
+        <h1 class="h1">
+          <span>Hi, I'm Kaustubh Srivastava</span>
+          <span>Analytics - Data Science - Data Engineer</span>
+        </h1>
+
+        <!-- Add a small introductory paragraph about yourself -->
+        <p class="header-text">
+          Analytics @ UC San Diego | Seeking Full-time 2024<br>
+          Specialized in Customer and Risk Analytics<br>
+          E-commerce & Q-Commerce Industry
+        </p>
+
+        <div class="header-btns">
+          <a href="#contact" class="btn btn-cta">HIRE->ME</a>
+          <a href="#work" class="btn btn-secondary">My Work</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
   <section class="work">
-      <div class="container">
-        <h2 class="h2" id="work">Past Work Place</h2>
-      </div>
+    <div class="container">
+      <h2 class="h2" id="work">Past Work Place</h2>
+    </div>
   </section>
 
-<section class="skills">
-  <div class="container">
-    <div class="skills-imgs">
-      <div class="skills-img-container-1">
-        <img src="assets/images/Dunzo-Image.jpg" alt="Dunzo" class="skills-img" loading="lazy" title="Dunzo">
-      </div>
-      <div class="skills-img-container-1">
-        <img src="assets/images/Growisto Image.png" alt="Growisto" class="skills-img" loading="lazy" title="Growisto">
-      </div>
+  <section class="skills">
+    <div class="container">
+      <div class="skills-imgs">
+        <div class="skills-img-container-1">
+          <img src="assets/images/Dunzo-Image.jpg" alt="Dunzo" class="skills-img" loading="lazy" title="Dunzo">
+        </div>
+        <div class="skills-img-container-1">
+          <img src="assets/images/Growisto Image.png" alt="Growisto" class="skills-img" loading="lazy" title="Growisto">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-    
-    
+
+
   <section class="work">
-      <div class="container">
-        <h2 class="h2" id="work">Projects</h2>
-        <div class="work-boxes">
-          <div class="work-box">
-            <div class="work-textbox">
-              <!-- Add your project title here -->
-              <h3 class="h3">Customer Analytics</h3>
-              <!-- Add small description of your project -->
-              <p class="work-text">
-                <br>
-                 ◘ Financial Cohorts and KPI Monitoring: Led the Finance team in creating user-focused financial cohorts using SQL, Excel, and Python. Developed Tableau dashboards for continuous KPI monitoring, delivering actionable insights <br><br>
-                 ◘ Support Funnel Redefinition: Redefined the application's support funnel through SQL analysis, expediting ticket resolution time and positively impacting Net Promoter Score (NPS), Customer Satisfaction Score (CSAT), and monthly active users<br><br>
-                 ◘ Retention and Customer Churn Analysis: Analyzed retention and customer churn due to offers and fraud rules, segmented based on categories, web app, and mobile application <br><br>
-                 <br>
-              </p>
-              <!-- Add technologies you used to build the project -->
-              <ol class="work-technologies">
-                
-              </ol>
-            </div>
+    <div class="container">
+      <h2 class="h2" id="work">Projects</h2>
+      <div class="work-boxes">
+        <div class="work-box">
+          <div class="work-textbox">
+            <!-- Add your project title here -->
+            <h3 class="h3">Customer Analytics</h3>
+            <!-- Add small description of your project -->
+            <p class="work-text">
+              <br>
+              ◘ Financial Cohorts and KPI Monitoring: Led the Finance team in creating user-focused financial cohorts
+              using SQL, Excel, and Python. Developed Tableau dashboards for continuous KPI monitoring, delivering
+              actionable insights <br><br>
+              ◘ Support Funnel Redefinition: Redefined the application's support funnel through SQL analysis, expediting
+              ticket resolution time and positively impacting Net Promoter Score (NPS), Customer Satisfaction Score
+              (CSAT), and monthly active users<br><br>
+              ◘ Retention and Customer Churn Analysis: Analyzed retention and customer churn due to offers and fraud
+              rules, segmented based on categories, web app, and mobile application <br><br>
+              <br>
+            </p>
+            <!-- Add technologies you used to build the project -->
+            <ol class="work-technologies">
 
-            <!-- Update img src and alt attribute -->
-            <picture class="work-img">
-              <img
-                loading="lazy"
-                src="assets/images/1.webp"
-                alt="Customer Analytics"
-              />
-            </picture>
+            </ol>
           </div>
 
-
-
-
- <div class="container">
-        <div class="work-boxes">
-          <div class="work-box">
-            <div class="work-textbox">
-              <!-- Add your project title here -->
-              <h3 class="h3">Fraud Analytics</h3>
-              <!-- Add small description of your project -->
-              <p class="work-text">
-                <br>
-                <b>Fraud Prevention and Detection</b>
-                <br>
-                <br>
-                ◘ Led Risk Team: Developed an automated fraud detection tool using Python, SQL, JIRA, and Tableau, reducing manual effort by 120 hours weekly<br><br>
-                ◘ Automated Refund Mechanism: Created an end-to-end refund mechanism using SQL (BigQuery) and authored the Product Requirements Document (PRD) on Confluence, achieving monthly savings of $250,000 for the platform<br><br>
-                ◘ Product Feature Gap Analysis: Identified gaps in payment features by analyzing patterns in online and COD transactions, leading to the creation of new product features and annual savings of over $50,000<br><br>
-                ◘ Joint Project with Experian PLC: Directed the analytics team in a $125,000 project to minimize platform misuse, collaborating with Experian PLC<br><br>
-                <br>
-                <br>
-                <b>Fraud Detection Process</b>
-                <br>
-                <br>
-                ◘ Data Warehousing: Stored and analyzed data to identify patterns and relationships indicative of fraudulent activity<br><br>
-                ◘ Association Rules: Created association rules and applied If/Else analysis patterns to authenticate customers and generate alerts upon detecting anomalies<br><br>
-                ◘ Machine Learning: Utilized machine learning algorithms to continuously learn from data, enhancing the detection of complex and evolving fraud tactics<br><br>
-                <br>
-                <br>
-                <b>Fraud Prevention Measures</b>
-                <br>
-                <br>
-                ◘ User Fraud Prevention: Implemented stringent verification protocols to detect and prevent identity fraud, recycled phone usage, and duplicate accounts<br><br>
-                ◘ Partner Fraud Prevention: Developed comprehensive guidelines and monitoring systems to identify and deter driver fraud and other forms of partner misconduct<br><br>
-                ◘ Refund Misuse Curtailment: Established clear refund policies and employed advanced analytics to detect and prevent misuse of refund requests<br><br>
-                ◘ Offer Usage Regulation: Designed and enforced rules to ensure fair use of promotional offers and discounts, minimizing exploitation<br><br>
-                ◘ Incentive Distribution Management: Optimized incentive distribution systems to prevent fraudulent claims and ensure legitimate beneficiaries receive rewards<br><br>
-                ◘ Referral Bonus Oversight: Implemented robust checks to verify the authenticity of referrals and prevent fraudulent bonus claims<br><br>
-              
-              </p>
-              <!-- Add technologies you used to build the project -->
-              <ol class="work-technologies">
-                
-              </ol>
-            </div>
-
-            <!-- Update img src and alt attribute -->
-            <picture class="work-img">
-              <img
-                loading="lazy"
-                src="assets/images/2.webp"
-                alt="Customer Analytics"
-              />
-            </picture>
-          </div>
-
-
-        
-          <div class="work-box">
-            <div class="work-textbox">
-              <!-- Add your project title here -->
-              <h3 class="h3">Data Science Projects</h3>
-              <!-- Add small description of your project -->
-              <p class="work-text">
-                ◘ Item Demand Forecasting Model: Developed an item demand forecasting model on VertexAI (GCP) using machine learning techniques, including Linear, Nonlinear, and LSTM modeling, to predict inventory for dark stores. Achieved a 20% increase in availability and a 5% reduction in wastage
-                <br>
-                <br>
-                ◘ Implemented K-means and Hierarchical Density-Based Spatial Clustering (HDL) to understand user cohorts for offer usage, enabling the identification of which users should and should not receive offers <br>
-                <br>
-                <br>
-              </p>
-              <ol class="work-technologies">
-            
-              </ol>
-            </div>
-
-            <!-- Update img src and alt attribute -->
-            <picture class="work-img">
-              <img
-                loading="lazy"
-                src="assets/images/3.webp"
-                alt="Data Science Projects"
-              />
-            </picture>
-          </div>
+          <!-- Update img src and alt attribute -->
+          <picture class="work-img">
+            <img loading="lazy" src="assets/images/1.webp" alt="Customer Analytics" />
+          </picture>
         </div>
-      </div>
-    </section>
+        <div class="work-box">
+          <div class="work-textbox">
+            <!-- Add your project title here -->
+            <h3 class="h3">Fraud Analytics</h3>
+            <!-- Add small description of your project -->
+            <p class="work-text">
+              <br>
+              <b>Fraud Prevention and Detection</b>
+              <br>
+              <br>
+              ◘ Led Risk Team: Developed an automated fraud detection tool using Python, SQL, JIRA, and Tableau,
+              reducing manual
+              effort by 120 hours weekly<br><br>
+              ◘ Automated Refund Mechanism: Created an end-to-end refund mechanism using SQL (BigQuery) and authored the
+              Product
+              Requirements Document (PRD) on Confluence, achieving monthly savings of $250,000 for the platform<br><br>
+              ◘ Product Feature Gap Analysis: Identified gaps in payment features by analyzing patterns in online and
+              COD
+              transactions, leading to the creation of new product features and annual savings of over $50,000<br><br>
+              ◘ Joint Project with Experian PLC: Directed the analytics team in a $125,000 project to minimize platform
+              misuse,
+              collaborating with Experian PLC<br><br>
+              <br>
+              <br>
+              <b>Fraud Detection Process</b>
+              <br>
+              <br>
+              ◘ Data Warehousing: Stored and analyzed data to identify patterns and relationships indicative of
+              fraudulent
+              activity<br><br>
+              ◘ Association Rules: Created association rules and applied If/Else analysis patterns to authenticate
+              customers and
+              generate alerts upon detecting anomalies<br><br>
+              ◘ Machine Learning: Utilized machine learning algorithms to continuously learn from data, enhancing the
+              detection
+              of complex and evolving fraud tactics<br><br>
+              <br>
+              <br>
+              <b>Fraud Prevention Measures</b>
+              <br>
+              <br>
+              ◘ User Fraud Prevention: Implemented stringent verification protocols to detect and prevent identity
+              fraud,
+              recycled phone usage, and duplicate accounts<br><br>
+              ◘ Partner Fraud Prevention: Developed comprehensive guidelines and monitoring systems to identify and
+              deter driver
+              fraud and other forms of partner misconduct<br><br>
+              ◘ Refund Misuse Curtailment: Established clear refund policies and employed advanced analytics to detect
+              and
+              prevent misuse of refund requests<br><br>
+              ◘ Offer Usage Regulation: Designed and enforced rules to ensure fair use of promotional offers and
+              discounts,
+              minimizing exploitation<br><br>
+              ◘ Incentive Distribution Management: Optimized incentive distribution systems to prevent fraudulent claims
+              and
+              ensure legitimate beneficiaries receive rewards<br><br>
+              ◘ Referral Bonus Oversight: Implemented robust checks to verify the authenticity of referrals and prevent
+              fraudulent bonus claims<br><br>
 
-   <section class="skills">
-  <div class="container">
-    <h2 class="h2" id="skills">My Tech World</h2>
-    <div class="skills-imgs">
-      <div class="skills-img-container">
-        <img src="assets/images/numpy.jpg" alt="numpy" class="skills-img" loading="lazy" title="Numpy">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/pandas.png" alt="pandas" class="skills-img" loading="lazy" title="Pandas">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/amazonathena.png" alt="Athena" class="skills-img" loading="lazy" title="Athena SQL">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/scikit.png" alt="scikit" class="skills-img" loading="lazy" title="Scikit-Learn">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/postgress.webp" alt="postgres" class="skills-img" loading="lazy" title="Postgres SQL">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/snowflake.jpg" alt="snowflake" class="skills-img" loading="lazy" title="Snowflake">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/Tableau.jpg" alt="Tableau" class="skills-img" loading="lazy" title="Tableau">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/Looker.png" alt="Looker" class="skills-img" loading="lazy" title="Looker Studio">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/Gsheet.png" alt="Gsheet" class="skills-img" loading="lazy" title="Gsheet">
-      </div>
-      <div class="skills-img-container">
-        <img src="assets/images/excel.webp" alt="Excel" class="skills-img" loading="lazy" title="Excel">
+            </p>
+            <!-- Add technologies you used to build the project -->
+            <ol class="work-technologies">
+
+            </ol>
+          </div>
+
+          <!-- Update img src and alt attribute -->
+          <picture class="work-img">
+            <img loading="lazy" src="assets/images/2.webp" alt="Customer Analytics" />
+          </picture>
+        </div>
+        <div class="work-box">
+          <div class="work-textbox">
+            <!-- Add your project title here -->
+            <h3 class="h3">Data Science Projects</h3>
+            <!-- Add small description of your project -->
+            <p class="work-text">
+              ◘ Item Demand Forecasting Model: Developed an item demand forecasting model on VertexAI (GCP) using
+              machine
+              learning techniques, including Linear, Nonlinear, and LSTM modeling, to predict inventory for dark stores.
+              Achieved a 20% increase in availability and a 5% reduction in wastage
+              <br>
+              <br>
+              ◘ Implemented K-means and Hierarchical Density-Based Spatial Clustering (HDL) to understand user cohorts
+              for offer
+              usage, enabling the identification of which users should and should not receive offers <br>
+              <br>
+              <br>
+            </p>
+            <ol class="work-technologies">
+
+            </ol>
+          </div>
+
+          <!-- Update img src and alt attribute -->
+          <picture class="work-img">
+            <img loading="lazy" src="assets/images/3.webp" alt="Data Science Projects" />
+          </picture>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-    <section class="contact">
-      <div class="container">
-        <h2 class="h2" id="contact">Let's Connect</h2>
-        <div class="contact-content">
-          <div class="contact-textbox">
-            <!-- Please comment this component if you're not available for hire -->
-            <strong href="#" class="hire-alert">
-              <span class="indicator"></span>
-              Available for hire
-            </strong>
-            <p class="contact-text">
-              I am currently pursuing my Master of Science in Business Analytics at UC San Diego and
-              previously have 4+ years of experience in creating strategies and generating insights with
-              tech stack of SQL, Python, BI tools - Tableau and Looker Studio, Excel/Gsheets and scientific modeling 
-            </p>
-          </div>
-          <form action="#" class="contact-form" netlify>
-            <div class="form-field">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                inputmode="email"
-              />
-            </div>
-            <div class="form-field">
-              <label for="message">How can I help you?</label>
-              <textarea name="message" id="message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-cta">Send</button>
-          </form>
+  <section class="skills mb-pd-null">
+    <div class="container">
+      <h2 class="h2 margin-btm-20" id="skills">My Tech World</h2>
+      <div class="skills-imgs">
+        <div class="skills-img-container">
+          <img src="assets/images/numpy.jpg" alt="numpy" class="skills-img" loading="lazy" title="Numpy">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/pandas.png" alt="pandas" class="skills-img" loading="lazy" title="Pandas">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/amazonathena.png" alt="Athena" class="skills-img" loading="lazy" title="Athena SQL">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/scikit.png" alt="scikit" class="skills-img" loading="lazy" title="Scikit-Learn">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/postgress.webp" alt="postgres" class="skills-img" loading="lazy" title="Postgres SQL">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/snowflake.jpg" alt="snowflake" class="skills-img" loading="lazy" title="Snowflake">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/Tableau.jpg" alt="Tableau" class="skills-img" loading="lazy" title="Tableau">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/Looker.png" alt="Looker" class="skills-img" loading="lazy" title="Looker Studio">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/Gsheet.png" alt="Gsheet" class="skills-img" loading="lazy" title="Gsheet">
+        </div>
+        <div class="skills-img-container">
+          <img src="assets/images/excel.webp" alt="Excel" class="skills-img" loading="lazy" title="Excel">
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </body>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="h2" id="contact">Let's Connect</h2>
+      <div class="contact-content">
+        <div class="contact-textbox">
+          <!-- Please comment this component if you're not available for hire -->
+          <strong href="#" class="hire-alert">
+            <span class="indicator"></span>
+            Available for hire
+          </strong>
+          <p class="contact-text">
+            I am currently pursuing my Master of Science in Business Analytics at UC San Diego and
+            previously have 4+ years of experience in creating strategies and generating insights with
+            tech stack of SQL, Python, BI tools - Tableau and Looker Studio, Excel/Gsheets and scientific modeling
+          </p>
+        </div>
+        <form action="#" class="contact-form" netlify>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required inputmode="email" />
+          </div>
+          <div class="form-field">
+            <label for="message">How can I help you?</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</body>
+
 </html>
